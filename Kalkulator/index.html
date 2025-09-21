@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <script>
+
+        window.onload = function () {
+
+            alert("Welcome to the Simple Calculator!");
+            calculate();
+        }
+
+        function calculate() {
+
+            let num1 = parseFloat(prompt("Angka Pertama:"));
+
+            let operator = prompt("Mau diapain (+, -, *, /):");
+
+            let num2 = parseFloat(prompt("Angka Kedua:"));
+
+            let result;
+
+            if (operator === "+") {
+                result = num1 + num2;
+            } else if (operator === "-") {
+                result = num1 - num2;
+            } else if (operator === "*") {
+                result = num1 * num2;
+            } else if (operator === "/") {
+                result = num1 / num2;
+            } else {
+                alert("Invalid operator!");
+                return;
+            }
+
+            alert("Hasilnya: " + result);
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
